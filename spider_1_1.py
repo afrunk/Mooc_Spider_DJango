@@ -55,7 +55,7 @@ class Mooc():
         # 爬取关键词类别
         # ['java', 'python', 'c\c++\c#', '网络安全']
         # 修改处1 修改当前要抓取得类目关键词即可 比如c 或 c++ 或 c#
-        leibie_list=['c++']
+        leibie_list=['网络安全']
 
         # 将关键词转换成URL编码 否则会显示无结果
         def quote(x):
@@ -65,7 +65,7 @@ class Mooc():
         for search,leibie in zip(keywords,leibie_list):
             # 分类
             # 需要修改处2 修改当前得分类大类目
-            Technical_direction ='c\c++\c#'
+            Technical_direction ='网络安全'
             # 翻页
             for y in range(1,9):
                 try:
